@@ -334,5 +334,28 @@ h6 {
 .col-2:hover .hover{color: rgba(255, 204, 0, 0.600);}
 .col-1:hover .hover{color: rgba(255, 0, 0, 0.600);}
 
+/* first-footer */
 
+.first-footer {
+    background-color: #ededed;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 30px 30px 90px;
+}
 
+.head-content p span, .head-2-content p span {
+    font-size: 8px;
+    padding: 1px;
+}
+
+.head, .head-2 {
+    margin: 40px 0;
+    font-size: 22px;
+}
+
+.head-content, .head-2-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 17px;
+}
