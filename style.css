@@ -137,11 +137,13 @@ h6 {
 }
 
 .hero-images {
-    /* background-color: chartreuse; */
+    background-color: rgba(128, 255, 0, 0.342);
     position: relative;
     overflow: hidden;
     width: 80%;
     height: 600px;
+    max-width: 0%;
+    min-width: 50%;
 }
 
 .anime img {width: 60px;}
@@ -175,8 +177,9 @@ h6 {
 }
 
 .hero-1st-img {
-    width: 380px;
-    height: 300px;
+    max-width: 50%;
+    min-width: 45%;
+    height: 48%;
     background-color: #fff;
     z-index: 10;
     position: absolute;
@@ -185,8 +188,8 @@ h6 {
 }
 
 .hero-2nd-img {
-    width: 800px;
-    height: 430px;
+    width: 90%;
+    height: 75%;
     position: absolute;
     top: 0;
     right: -180px;
@@ -242,7 +245,7 @@ h6 {
 .col {
     width: 280px;
     height: 280px;
-    background-color: #ededed3a;
+    background-color: #ededed8f;
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
@@ -337,7 +340,7 @@ h6 {
 /* first-footer */
 
 .first-footer {
-    background-color: #ededed3a;
+    background-color: #ededed8f;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 30px 30px 60px 90px;
@@ -390,6 +393,8 @@ h6 {
 /* icons in the middle */
 
 .icons-section {
+    min-width: 90%;
+    margin: 0 auto;
 }
 
 .icon-text h2 {
@@ -402,9 +407,9 @@ h6 {
 .icon-pngs {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 120px;
-
 }
 
 .icon-pngs img {
@@ -415,3 +420,68 @@ h6 {
     transform: scale(1.15);
     transform: rotate(25deg);
 }
+
+
+/* responsive screens */
+
+/* Styles for desktop screens */
+
+@media (max-width: 1090px){
+    body {
+        background-color: red;
+    }
+
+    .hero-container {
+        background-color: #00800086;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .hero-text {
+        margin:0 auto;
+        width: 40%;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .hero-text p {
+        width: 78%;
+        margin: 30px auto;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        margin: 13px auto;
+    }
+
+    .hero-btns .start{
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        background-color: #0066FF;
+    }
+    
+    .hero-btns .trending{
+        padding: 4px 8px;
+        border-radius: 10px;
+        border: 2px solid #d7d7d7;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: transparent;
+    }
+}
+/* Styles for tablet screens */
+
+@media (max-width: 768px){
+    body {
+        background-color: red;
+    }
+}
+/* Styles for desktop screens */
