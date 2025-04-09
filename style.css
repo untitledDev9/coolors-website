@@ -242,7 +242,7 @@ h6 {
 .col {
     width: 280px;
     height: 280px;
-    background-color: #ededed;
+    background-color: #ededed3a;
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
@@ -337,10 +337,12 @@ h6 {
 /* first-footer */
 
 .first-footer {
-    background-color: #ededed;
+    background-color: #ededed3a;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 30px 30px 30px 90px;
+    padding: 30px 30px 60px 90px;
+    border-bottom: 2px solid #d4d4d4;
+    
 }
 
 .head-content p span, .head-2-content p span {
@@ -358,4 +360,58 @@ h6 {
     flex-direction: column;
     gap: 25px;
     font-size: 17px;
+}
+
+/* second-footer */
+
+.second-footer {
+    background-color: #ededed3a;
+    padding: 25px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-icons img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+.second-text {
+    font-size: 13px;
+    color: #969494;
+}
+
+.second-text p span {
+    font-size: 14px;
+    color: #535353;
+}
+
+/* icons in the middle */
+
+.icons-section {
+}
+
+.icon-text h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #5f5f5f;
+    margin-bottom: 80px;
+}
+
+.icon-pngs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 120px;
+
+}
+
+.icon-pngs img {
+    width: 60px;
+    transition: all 0.5s ease;
+}
+.icon-pngs img:hover {
+    transform: scale(1.15);
+    transform: rotate(25deg);
 }
