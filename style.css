@@ -154,20 +154,24 @@ h6 {
 .anime {display: flex;}
 .explore{
     gap: 20px;
-    transform: rotate(20deg);
+    transform: rotate(40deg);
     position: absolute;
     top: 30px;
     left: 90px;
     font-family: "Pacifico", cursive;
     font-size: 18px;
     color: #737373;
-    transition: .5s all ease;
+    transition: all .5s ease;
 }
 
 .explore:hover, .palette:hover {
     font-size: 22px;
     color: #525151;
+    transform: rotate(30deg);
+    left: 130px;
 }
+
+.palette:hover{left: 50px;}
 
 .palette {
     transform: rotate(-10deg);
@@ -181,14 +185,13 @@ h6 {
 }
 
 .hero-1st-img {
-    max-width: 50%;
-    min-width: 45%;
-    height: 48%;
+    /* max-width: 50%; */
+    min-width: 40%;    height: 48%;
     background-color: #fff;
     z-index: 10;
     position: absolute;
     bottom: 10px;
-    left: 55px;
+    left: 115px;
 }
 
 .hero-2nd-img {
@@ -196,7 +199,7 @@ h6 {
     height: 75%;
     position: absolute;
     top: 0;
-    right: -180px;
+    right: -240px;
     z-index: -2;
 
 }
