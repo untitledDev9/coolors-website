@@ -408,9 +408,13 @@ h6 {
 }
 
 .icon-pngs {
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    place-items: center;
     align-items: center;
     margin-bottom: 120px;
 }
@@ -585,9 +589,104 @@ h6 {
 }
 /* Styles for tablet screens */
 
-@media (max-width: 1024px){
-    body {
+@media (max-width: 834px){
+
+    .hero-container {
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .hero-text {
+        width: 78%;
+    }
+
+    .hero-text h1 {
+        font-size: 80px;
+        line-height: 77px;
+        margin: 30px 0;
+    }
+
+    .hero-text p {
+        width: 88%;
+        margin: 40px auto;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: max-content;
+        gap: 20px;
+    }
+
+    .hero-btns .start{
+        padding: 15px 60px;
+        font-size: 17px;
+
+    }
+    
+    .hero-btns .trending{
+        padding: 15px 45px;
+        font-size: 17px;
+    }
+
+    .hero-icon-btn {
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 15px 35px;
+        gap: 15px;
+    }
+
+    .hero-images {
+        display: none;
+    }
+
+    .first-footer {
+        padding: 30px 30px 60px 60px;
+        gap: 30px;
+    }
+
+    .icon-text h2 {
+        margin: 30px 0 80px;
+    }
+
+    /* .icon-pngs {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        place-items: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 120px;
         background-color: red;
+        width: fit-content; 
+        margin: 0 auto;
+    } */
+
+    .icon-pngs {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .icon-pngs .none-icon {
+        display: none;
+    }
+
+    .icon-pngs img {
+        width: 50px;
+    }
+
+    .head, .head-2 {
+        margin: 40px 0;
+        font-size: 20px;
+    }
+    
+    .head-content, .head-2-content {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        font-size: 15px;
     }
 }
 /* Styles for desktop screens */
